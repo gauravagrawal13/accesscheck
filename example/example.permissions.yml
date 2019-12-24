@@ -1,0 +1,6 @@
+create foo block content:
+  title: 'Create Foo block'
+create bar block content:
+  title: 'Create Bar block'
+create basic block content:
+  title: 'Create Basic block'

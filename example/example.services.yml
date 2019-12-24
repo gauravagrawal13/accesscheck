@@ -1,0 +1,11 @@
+services:
+  access_check.block.add:
+    class: Drupal\example\Access\ExampleAccessCheck
+    arguments: ['@current_user']
+    tags:
+      - { name: access_check, applies_to: _example_access_check }
+
+  example.route_subscriber:
+    class: Drupal\example\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber }
